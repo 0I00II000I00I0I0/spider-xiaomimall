@@ -19,22 +19,23 @@ public class SpiderXiaomimallApplication {
     public static void main(String[] args) throws Exception {
 
 
-        // 所有商品url
-        List<String> productUrls = UrlFactory.getProductUrl(SysConstant.BASE_URL);
+//        // 所有商品url
+//        List<String> productUrls = UrlFactory.getProductUrl(SysConstant.BASE_URL);
+//
+//        // 所有商品id
+//        List<String> productIds1 = new ArrayList<>();
+//
+//        for (String producturl : productUrls) {
+//            String productId = SearchUrlParse.getProductId(producturl);
+//            productIds1.add(productId);
+//        }
+//
+//        // 去重
+//        List<String> productIds = productIds1.stream().distinct().collect(Collectors.toList());
+
 
         // 所有商品id
-        List<String> productIds1 = new ArrayList<>();
-
-        for (String producturl : productUrls) {
-            String productId = SearchUrlParse.getProductId(producturl);
-            productIds1.add(productId);
-        }
-
-        // 去重
-        List<String> productIds = productIds1.stream().distinct().collect(Collectors.toList());
-
-
-//        List<String> productIds = SysConstant.PRODUCT_IDS;
+        List<String> productIds = SysConstant.PRODUCT_IDS;
 
         // 所有商品信息 + 评论
         List<Product> productInfoLists = new ArrayList<>();
