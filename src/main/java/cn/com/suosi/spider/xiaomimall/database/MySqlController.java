@@ -9,7 +9,7 @@ import java.util.List;
 
 public class MySqlController {
 
-    static DataSource dataSource = MyDataSource.getDataSource("jdbc:mysql://localhost:3306/spider_xiaomi?useUnicode=true&characterEncoding=utf-8&useSSL=false");
+    static DataSource dataSource = MyDataSource.getDataSource("jdbc:mysql://localhost:3306/spider?useUnicode=true&characterEncoding=utf-8&useSSL=false");
     static QueryRunner queryRunner = new QueryRunner(dataSource);
 
     public static void executeInsert(List<Product> productList) throws SQLException {

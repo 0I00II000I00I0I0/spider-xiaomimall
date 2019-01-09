@@ -1,4 +1,4 @@
-USE `spider_xiaomi`;
+USE `spider`;
 CREATE TABLE `xiaomimall` (
   `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'ID',
   `product_id` VARCHAR(20) DEFAULT NULL COMMENT '产品ID',
